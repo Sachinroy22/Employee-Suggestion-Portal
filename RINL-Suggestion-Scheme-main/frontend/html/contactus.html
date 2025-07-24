@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../css/contactus.css"/>
+</head>
+<body>
+  <div class="backgroundimage"></div>
+
+  <header>
+    <div class="header-content">
+      <img src="../images/rinl logo.jpg" alt="RINL Logo" class="logo" />
+      <div class="header-text">
+        <h2>Rashtriya Ispat Nigam Limited</h2>
+        <p>Visakhapatnam Steel Plant</p>
+      </div>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../html/FAQ.html">FAQ</a>
+      <a href="../html/contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, fill out the form below.</p>
+
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" name="from_name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="from_email" required>
+
+      <label for="message">Message:</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="form-message"></p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="../javascript/contactus.js"></script>
+</body>
+</html>

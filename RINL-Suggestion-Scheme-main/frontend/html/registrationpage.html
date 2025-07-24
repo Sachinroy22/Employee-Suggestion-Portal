@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="../css/registrationpage.css" />
+</head>
+<body>
+  <div class="backgroundimage"></div>
+
+  <header>
+  <div class="header-content">
+    <img src="../images/rinl logo.jpg" alt="RINL Logo" class="logo" />
+    <div class="header-text">
+      <h2>Rashtriya Ispat Nigam Limited</h2>
+      <p>Visakhapatnam Steel Plant</p>
+    </div>
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <nav id="nav-menu">
+    <a href="../index.html">Home</a>
+    <a href="../html/FAQ.html">FAQ</a>
+    <a href="../html/contactus.html">Contact Us</a>
+  </nav>
+</header>
+  <div class="container">
+    <h3>New User Registration</h3>
+    <p class="note">Note: Please enter a Valid Email ID and Mobile number</p>
+    <form id="registerForm">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email ID" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="password" name="confirmPassword" placeholder="Confirm Password" required />
+      <input type="text" name="mobile" placeholder="Mobile Number" required />
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script src="../javascript/registrationpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Blurred Background Image */
+.backgroundimage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('Backgroundimage.jpeg') center/cover no-repeat;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+/* Body */
+body {
+  background: #f2f2f2;
+}
+
+/* Header Section */
+header {
+  background: #008020;
+  padding: 15px 20px;
+  border-bottom: 3px solid #ffc107;
+  color: #fff;
+}
+
+/* Header layout (Logo + Text) */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Header Text */
+.header-text h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+/* Toggle button for mobile */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  text-align: right;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Navigation menu */
+nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Suggestion Form Container */
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 600px;
+  margin: 90px auto 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Elements */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0072b1;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f90;
+}
+
+/* Thank You Message */
+.hidden {
+  display: none;
+  margin-top: 15px;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+/* ------------------ Responsive Styling ------------------ */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 60px;
+    margin-bottom: 8px;
+  }
+
+  .header-text h2 {
+    font-size: 18px;
+  }
+
+  .header-text p {
+    font-size: 13px;
+  }
+
+  .menu-toggle {
+    display: block;
+    text-align: right;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #006418;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  #nav-menu.show {
+    display: flex;
+  }
+
+  nav a {
+    display: block;
+    padding: 8px 0;
+  }
+
+  .container {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

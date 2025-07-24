@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Blurred Background Image */
+.backgroundimage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('Backgroundimage.jpeg') center/cover no-repeat;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+/* Body */
+body {
+  background: #f2f2f2;
+}
+
+/* Header Section */
+header {
+  background: #008020;
+  padding: 15px 20px;
+  border-bottom: 3px solid #ffc107;
+  color: #fff;
+}
+
+/* Header layout (Logo + Text) */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Header Text */
+.header-text h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+/* Toggle button for mobile */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  text-align: right;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Navigation menu */
+nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.container {
+  width: 70%;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+.suggestion-block {
+  background: #e6ffe6;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-left: 5px solid #008020;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 80px;
+    height: 90px;
+  }
+
+  .header-text h2 {
+    font-size: 20px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+  }
+
+  nav.navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav.navbar a {
+    margin: 5px 0;
+  }
+  .menu-toggle {
+    display: block;
+    text-align: right;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #006418;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  #nav-menu.show {
+    display: flex;
+  }
+
+  nav a {
+    display: block;
+    padding: 8px 0;
+  }
+}

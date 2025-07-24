@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suggestion</title>
+  <link rel="stylesheet" href="../css/suggestionpage.css"/>
+</head>
+<body>
+  <div class="backgroundimage"></div>
+  <header>
+  <div class="header-content">
+    <img src="../images/rinl logo.jpg" alt="RINL Logo" class="logo" />
+    <div class="header-text">
+      <h2>Rashtriya Ispat Nigam Limited</h2>
+      <p>Visakhapatnam Steel Plant</p>
+    </div>
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <nav id="nav-menu">
+    <a href="../index.html">Home</a>
+    <a href="../html/FAQ.html">FAQ</a>
+    <a href="../html/contactus.html">Contact Us</a>
+  </nav>
+</header>
+
+
+  <div class="container">
+    <h2>Employee Suggestion Portal</h2>
+    <form id="suggestionForm">
+      <input type="text" name="empName" placeholder="Employee Name" required />
+      <input type="text" name="empID" placeholder="Employee ID" pattern=".{6}" maxlength="6" title="Employee ID must be exactly 6 characters" required />
+
+      <input type="text" name="department" placeholder="Department" required />
+      <textarea name="suggestion" placeholder="Your Suggestion" rows="7" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="thankYouMsg" class="hidden">Thank you for your suggestion!</div>
+  </div>
+
+  <script src="../javascript/suggestionpage.js"></script>
+</body>
+</html>

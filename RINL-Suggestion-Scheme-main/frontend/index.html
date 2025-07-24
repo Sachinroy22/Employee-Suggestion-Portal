@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../css/loginpage.css" />
+</head>
+<body>
+
+  <div class="backgroundimage"></div>
+
+  <!-- Header Section -->
+  <header>
+  <div class="header-content">
+    <img src="../images/rinl logo.jpg" alt="RINL Logo" class="logo" />
+    <div class="header-text">
+      <h2>Rashtriya Ispat Nigam Limited</h2>
+      <p>Visakhapatnam Steel Plant</p>
+    </div>
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <nav id="nav-menu">
+    <a href="../html/loginpage.html">Home</a>
+    <a href="../html/FAQ.html">FAQ</a>
+    <a href="../html/contactus.html">Contact Us</a>
+  </nav>
+</header>
+
+  <!-- Login Container -->
+  <div class="container">
+    <div class="login-box">
+      <h3>Login</h3>
+      <form onsubmit="return validateLogin(event)">
+        <div class="role-select">
+          <label><input type="radio" name="role" value="employee" checked onchange="toggleRegister()"> Employee</label>
+          <label><input type="radio" name="role" value="admin" onchange="toggleRegister()"> Admin</label>
+        </div>
+
+        <input class="inputtext" type="email" id="userID" placeholder="Enter your registered email" required />
+
+        <input class="inputtext" type="password" id="userPass" placeholder="Password" required />
+        <a href="#">Forgot password?</a>
+        <button type="submit">Login</button>
+
+        <div class="register-line" id="registerLine">
+          <p class="register-text">Don't have an account?</p>
+          <a href="../html/registrationpage.html">Register</a>
+        </div>
+      </form>
+    </div>
+  </div>
+<script src="javascript/loginpage.js"></script>
+</body>
+</html>
